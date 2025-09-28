@@ -197,12 +197,3 @@
   --chart-4: var(--color-solar-flare);
   --chart-5: var(--color-green-700);
 }
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
