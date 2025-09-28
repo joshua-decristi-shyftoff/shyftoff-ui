@@ -1,0 +1,23 @@
+@theme inline {
+  --radius-xs: calc(var(--radius) * 0.333); /* 4px */
+  --radius-sm: calc(var(--radius) * 0.667); /* 8px */
+  --radius: var(--border-radius); /* 12px */
+  --radius-lg: calc(var(--radius) * 1.333); /* 16px */
+  --radius-xl: calc(var(--radius) * 1.667); /* 20px */
+  --radius-2xl: calc(var(--radius) * 2); /* 24px */
+  --radius-3xl: calc(var(--radius) * 2.5); /* 30px */
+  --radius-4xl: calc(var(--radius) * 3); /* 36px */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root {
+  --border-radius: 0.75rem; /* 12px */
+}
