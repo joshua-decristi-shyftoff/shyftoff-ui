@@ -39,7 +39,7 @@ const config = defineConfig([
   },
   {
     // Disable "default export" rule for Next.js routing files
-    files: ["app/**/{layout,page,loading,not-found,error,global-error,route,template,default}.tsx"],
+    files: ["app/**/{layout,page,loading,not-found,error,global-error,route,template,default}.{ts,tsx}"],
     rules: { "import/no-default-export": "off" },
   },
 ]);
