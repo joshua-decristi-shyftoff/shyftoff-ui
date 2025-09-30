@@ -1,16 +1,15 @@
 import type { Rules, TypedFlatConfigItem } from "@antfu/eslint-config";
 
 const rules: Rules = {
+  "unicorn/better-regex": "error",
   "unicorn/filename-case": ["error", {
-    cases: {
-      kebabCase: true,
-    },
+    cases: { kebabCase: true },
   }],
 };
 
 const files: TypedFlatConfigItem[] = [
   {
-    // Enforce PascalCase for TSX components
+    // Enforce PascalCase naming convention for TSX components
     files: ["**/*.{ts,tsx}"],
     rules: {
       "unicorn/filename-case": ["error", {
@@ -19,20 +18,21 @@ const files: TypedFlatConfigItem[] = [
     },
   },
   {
-    // Disable PascalCase for TSX components
-    files: [
-      "**/*.config.ts",
-      "app/**/{layout,page,loading,not-found,error,global-error,route,template,default}.tsx",
-    ],
+    // Enforce kebab-case naming convention for config files
+    files: ["**/*.config.ts"],
     rules: {
       "unicorn/filename-case": ["error", {
-        cases: { camelCase: true },
+        cases: { kebabCase: true },
       }],
     },
   },
   {
-    // Disable filename case rule for markdown files
-    files: ["**/*.md"],
+    // Disable naming convention for markdown files
+    // Disable naming convention for Nextjs routing files
+    files: [
+      "**/*.md",
+      "app/**/{layout,page,loading,not-found,error,global-error,route,template,default}.tsx",
+    ],
     rules: { "unicorn/filename-case": "off" },
   },
 ];
