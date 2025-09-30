@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
+    "build": "next build",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "preview": "pnpm build:cloudflare && opennextjs-cloudflare preview",
+    "deploy": "pnpm build:cloudflare && opennextjs-cloudflare deploy",
+    "upload": "build:cloudflare && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "eslint .",
     "prepare": "husky"
   },
