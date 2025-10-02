@@ -37,7 +37,7 @@ const config: OptionsConfig["react"] = {
     "react/no-unsafe-component-will-mount": "error",
     "react/no-unsafe-component-will-receive-props": "error",
     "react/no-unsafe-component-will-update": "error",
-    "react/no-unstable-context-value": "error",
+    "react/no-unstable-context-value": "off",
     "react/no-unstable-default-props": "error",
     "react/no-unused-class-component-members": "error",
     "react/no-unused-state": "error",

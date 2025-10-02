@@ -2,6 +2,7 @@ import type { OptionsConfig } from "@antfu/eslint-config";
 
 const config: OptionsConfig["typescript"] = {
   overridesTypeAware: {
+    "node/prefer-global/process": "off",
     "prefer-const": "error",
     "ts/adjacent-overload-signatures": "off",
     "ts/array-type": ["error", { default: "array-simple", readonly: "array-simple" }],
@@ -17,6 +18,7 @@ const config: OptionsConfig["typescript"] = {
     "ts/no-namespace": "error",
     "ts/no-non-null-assertion": "error",
     "ts/prefer-destructuring": "error",
+    "ts/strict-boolean-expressions": "off",
     "ts/unbound-method": "off",
     "ts/unified-signatures": ["error", { ignoreDifferentlyNamedParameters: true }],
   },

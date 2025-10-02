@@ -24,8 +24,7 @@ const config = defineConfig([
     },
   },
   {
-    // Disable "default export" rule and "disallow all relative import" for config files
-    // Disable "default export" rule for Next.js routing files
+    // Enable "no default export" for js ts (etc) files
     files: ["**/*.{js,mjs,cjs,ts}"],
     rules: { "import/no-default-export": "error" },
   },
