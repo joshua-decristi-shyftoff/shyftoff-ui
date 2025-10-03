@@ -31,6 +31,7 @@ const files: TypedFlatConfigItem[] = [
     // Disable naming convention for Nextjs routing files
     files: [
       "**/*.md",
+      "middleware.ts",
       "app/**/{layout,page,loading,not-found,error,global-error,route,template,default}.{ts,tsx}",
     ],
     rules: { "unicorn/filename-case": "off" },
