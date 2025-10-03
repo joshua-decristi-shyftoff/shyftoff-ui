@@ -12,15 +12,15 @@ This document defines strict, non-negotiable rules for any automated agent worki
 ## Code Style and Structure
 
 - Write concise, technical Typescript code with accurate examples
-- Use functional and declarative programming patterns: avoid clases (unless it's a model in the models directory)
+- Use functional and declarative programming patterns: avoid classes (unless it's a model in the models directory)
 - Prefer iteration and modularization over code duplication
 - Use descriptive variable names with auxiliary verbs (e.g. isLoading, hasError)
-- Make sure all code is complient with ESLint config
+- Make sure all code is compliant with ESLint config
 
 ## Naming conventions
 
 - Use kebab-case for directory folders (e.g. styles/design-system/...)
-- Use PascaleCase for \*_/_.(ts,tsx) files (e.g. component/LoginForm.tsx, types/CloudflareEnv.d.ts)
+- Use PascalCase for \*_/_.(ts,tsx) files (e.g. component/LoginForm.tsx, types/CloudflareEnv.d.ts)
 - Use kebab-case for app/\*_/_.(ts,tsx) files (e.g app/page.tsx, app/(auth)/layout.tsx)
 - Use ALLCAPS for .md files (e.g. README.md)
 - Use kebab-case for config files (e.g. eslint.config.ts)
@@ -43,9 +43,9 @@ This document defines strict, non-negotiable rules for any automated agent worki
 ## Syntax and Formatting
 
 - Use only ES6 arrow functions: avoid "function" keyword
-- Avoid unnessesary curly braces in conditionals
+- Avoid unnecessary curly braces in conditionals
 - Use declarative JSX
-- Impliment proper Typescript descriminatied unions for message types
+- Implement proper TypeScript discriminated unions for message types
 
 ## Non‑Negotiable Architecture Rules
 

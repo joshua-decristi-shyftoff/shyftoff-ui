@@ -1,12 +1,12 @@
 # Shyftoff-Next
 
-This is a [Next.js](https://nextjs.org) setup to work on [Cloudflare Workers](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers). Walk through the rest of this README.md to understand how to get up and running, or checkout the [Project Overview](#project-structure--architecture) or [Contributing Guide](#contributing-guide) for more documentation
+This is a [Next.js](https://nextjs.org) setup for [Cloudflare Workers](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers). Read this README to get up and running, or see the [Project Overview](#project-structure--architecture) and [Contributing Guide](#contributing-guide).
 
 ## Getting Started
 
 Please checkout our [prerequisites](#prerequisites) to get your environment setup.
 
-#### Cloning this repoository
+#### Cloning this repository
 
 When cloning a private repository from [Github](https://github.com) you'll need to setup your SSH key first.
 
@@ -23,7 +23,7 @@ git clone git@github.com:shyftoff/shyftoff-next.git
 
 #### Environment Variables
 
-Please reachout to another developer to get environment variables setup. They are not managed by source control.
+Please reach out to another developer to set up environment variables. They are not committed to source control.
 
 #### Install all dependencies
 
@@ -39,16 +39,16 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**To Run the development server:**
+**To run the edge preview (Cloudflare Workers):**
 
 ```bash
 # Runs in a cloudflare worker environment
 pnpm preview
 ```
 
-Open [http://localhost:8787](http://localhost:8787) with your browser to see the result.
+Open [http://localhost:8787](http://localhost:8787) to view the app in a Workers-like environment.
 
-Checkout out [Contibuting Guide](#contributing-guide) for your first PR.
+Check out the [Contributing Guide](#contributing-guide) for your first PR.
 
 ## Project Structure & Architecture
 
