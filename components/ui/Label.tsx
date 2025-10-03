@@ -6,6 +6,9 @@ import { Root as LabelPrimitive } from "@radix-ui/react-label";
 
 import { cn } from "@/lib/Utils";
 
+/**
+ * Styled label built on Radix Label.
+ */
 const Label: FunctionComponent<ComponentProps<typeof LabelPrimitive>> = ({ className, ...props }) => (
   <LabelPrimitive
     className={cn(

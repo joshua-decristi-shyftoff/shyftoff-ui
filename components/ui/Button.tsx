@@ -39,6 +39,9 @@ type ButtonProps = ComponentProps<"button"> & VariantProps<typeof buttonVariants
   asChild?: boolean;
 };
 
+/**
+ * Button with variants and sizes. Supports polymorphic rendering via Radix Slot.
+ */
 const Button: FunctionComponent<ButtonProps> = ({ asChild = false, className, size, variant, ...props }) => {
   const Component = asChild ? Slot : "button";
 

@@ -11,6 +11,9 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   startIcon?: Icon;
 };
 
+/**
+ * Text input with optional start/end icons.
+ */
 const Input: FunctionComponent<InputProps> = ({ className, endIcon: EndIcon, startIcon: StartIcon, type, ...props }) => (
   <div className={cn(
     "relative flex items-center w-full",
